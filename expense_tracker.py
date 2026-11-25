@@ -1,11 +1,14 @@
 expenses = []
+
 def add_expense():
     description = input("Description : ")
     amount = float(input("Montant : "))
     expenses.append({
-        "description": description,"amount": amount
-        })
+        "description": description,
+        "amount": amount
+    })
     print("Depense ajoutee !")
+
 def show_expenses():
     if not expenses:
         print("Aucune depense enregistree.")
@@ -40,6 +43,7 @@ def main():
         print("3. Afficher le total")
         print("4. Quitter")
         choice = input("Votre choix : ")
+
         if choice == "1":
             add_expense()
         elif choice == "2":
